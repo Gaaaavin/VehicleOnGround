@@ -1,0 +1,6 @@
+
+*.mat
+archive/data/.DS_Store
+archive/.DS_Store
+archive/movie/.DS_Store
+*.avi
