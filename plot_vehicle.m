@@ -1,17 +1,18 @@
 function plot_vehicle(X_wheels, X_body)
-    clf
+%     clf
     axis equal
     axis manual
     grid on
-    axis([-5, 8, -5, 5, -2, 4])
+    axis([-5, 4, -5, 5, -2, 4])
     view(20, 20)
     hold on
     
-    [X,Y] = meshgrid(-5:8, -5:5);
+    [X,Y] = meshgrid(-5:0.5:8, -5:5);
 %     Z = 0.2 * sin(X) .* sin(Y);
 %     Z = 0.05 * (X .^ 2);
 %     Z = 0.5 * sqrt(X .^ 2 + (Y+5) .^ 2);
     Z = 0.5 .* cos(X);
+%     Z = -1/sqrt(3) .* X;
     surf(X,Y,Z)
     
     for i = 1:4
